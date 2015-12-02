@@ -1,0 +1,27 @@
+<div class="panel panel-primary content">
+  <div class="panel-body">
+    Liste des étudiants inscris
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Identifiant</th>
+        <th>Prenom</th>
+        <th>Nom</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody class="tableauUser">
+    <?php foreach ($listAllUser as $key => $user): ?>
+      <tr id="<?php echo $user['id_user'] ; ?>">
+        <td><?php echo $user['identifiant'];?></td>
+        <td><?php echo $user['prenom'];?></td>
+        <td><?php echo $user['nom'];?></td>
+        <td><?php echo $user['email'];?></td>
+
+      </tr>
+    <?php endforeach; ?>
+    </tbody>
+  </table>
+  </div>
+
+</div>

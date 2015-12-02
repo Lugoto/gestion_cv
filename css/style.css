@@ -1,0 +1,67 @@
+body,html{
+	margin:0;
+	padding: 0;
+}
+
+header{
+	background-image: url("https://newevolutiondesigns.com/images/freebies/hd-wallpaper-40.jpg");
+	min-height: 100px;
+
+}
+
+.login{
+  width: 870px;
+}
+
+.add{
+	width: 100px;
+  height: auto;
+}
+
+header > p {
+  font-size: 40px;
+}
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+}
+
+.content{
+   margin: 2%;
+}
+
+.titrelien{
+   color:white;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.tableauUser tr:hover{
+   background-color:rgb(169, 234, 254);
+   cursor:pointer;
+}
+
+.formConnection{
+   margin-left: 1%;
+   font-size: 25%;
+}
+.formConnection > input{
+   color:black;
+}

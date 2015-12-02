@@ -1,0 +1,45 @@
+<?php
+if($_SESSION['id_user'] != $user[0]['id_user']){
+  $affiche = "readonly";
+}
+
+else {
+  $affiche = "";
+}
+?>
+
+
+<form method="post" action="index.php?uc=user&action=update">
+  <div class="row">
+       <div class="medium-6 columns">
+           <br>
+               <input type="text" name ="nom" <?php echo ($affiche);?> value="<?php echo($user[0]['nom']); ?>"/>
+       </div>
+     </div>
+     <div class="row">
+          <div class="medium-6 columns">
+              <br>
+                  <input type="text" name ="prenom" <?php echo ($affiche);?> value="<?php echo($user[0]['prenom']); ?>"/>
+          </div>
+        </div>
+
+        <div class="row">
+             <div class="medium-6 columns">
+                 <br>
+                     <input type="text" name ="mail" <?php echo ($affiche);?> value="<?php echo($user[0]['email']); ?>"/>
+             </div>
+           </div>
+
+           <div class="row">
+                <div class="medium-6 columns">
+                    <br>
+                        <input type="password" name ="mail" <?php echo ($affiche);?> value="<?php echo($user[0]['mot_de_passe']); ?>"/>
+                </div>
+              </div>
+              <?php
+              if($_SESSION['id_user'] == $user[0]['id_user']){?>
+           <div class="medium-9 columns">
+                       <button type="submit" class="success button">Modifier</button>
+               </div>
+               <?php } ?>
+   </form>
